@@ -1,9 +1,13 @@
 const express = require('express');
 const country = require("./routes/country");
-const app =express();
+const dotenv = require('dotenv')
 
+dotenv.config({
+  path:'./data/config.env'
+})
+
+app =express();
 module.exports = app;
-
 
 app.use(express.json())
 
