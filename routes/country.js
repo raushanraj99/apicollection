@@ -1,9 +1,11 @@
 const express = require('express');
-const { countryName} = require('../controller/country');
+const { countryName,fruits} = require('../controller/country');
 
 const router = express.Router()
 
 router.get("/country",countryName)
+
+router.get("/fruits",fruits)
 
 
 module.exports = router;
