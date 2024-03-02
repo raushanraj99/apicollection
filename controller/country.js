@@ -14,7 +14,7 @@ const countryName = async (req,res)=>{
 const fruits = async (req,res)=>{
    const fruit = await fruitname.find();
    res.json({
-      status:True,
+      status:true,
       fruitlist:fruit
    })
 }
