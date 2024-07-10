@@ -1,6 +1,7 @@
 const express = require('express');
 const country = require("./routes/country");
-const dotenv = require('dotenv')
+const dotenv = require('dotenv');
+const cors = require('cors');
 
 dotenv.config({
   path:'./data/config.env'
