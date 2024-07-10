@@ -10,6 +10,7 @@ app =express();
 module.exports = app;
 
 app.use(express.json())
+app.use(cors())
 
 // middleware routes
 app.use("/api/v1",country)
